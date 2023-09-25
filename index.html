@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#" style="--i:1" class="active">Home</a>
+            <a href="#" style="--i:2">About</a>
+            <a href="#" style="--i:3">Skill</a>
+            <a href="#" style="--i:4">Portfolio</a>
+            <a href="#" style="--i:5">Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Ankita Vadgave</h1>
+            <h3> And I'm a<span class="text"></span>
+                <span id="typed"></span>
+                <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+                <script>
+                    var typed = new Typed('#typed', {
+                        strings: ['Web Developer', 'Web Designer', 'UI/UX Designer'],
+                        typeSpeed: 50,
+                        backSpeed: 50,
+                        loop: true
+                    });
+                    var tablinks = document.getElementsByClassName("tab-links");
+                    var tabcontents = document.getElementsByClassName("tab-contents");
+
+                    function openTab(tabname) {
+                        for (tablink of tablinks) {
+                            tablink.classList.remove("active-link");
+                        }
+                        for (tabcontent of tabcontents) {
+                            tabcontent.classList.remove("active-tab");
+                        }
+
+                    }
+                </script>
+            </h3>
+            <p>I'm a Web Developer 
+            </p>
+            <div class="home-sci">
+                <a href="#" style="--i:7"><i class='bx bxl-facebook'></i></a>
+                <a href="#" style="--i:8"><i class='bx bxl-instagram'></i></a>
+                <a href="#" style="--i:9"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" style="--i:10"><i class='bx bxl-behance'></i></a>
+
+            </div>
+
+            <a href="#" class="read">Hire me</a>
+        </div>
+        <span class="home-imgHover"></span>
+    </section>
+
+    <script src="script.js"></script>
+    <section class="about" id="about">
+        <!--- <div class="about-img">
+            <img src="2360_R0lVIE5JQyA0OTctNDM.jpg"> --->
+
+        </div>
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <p> Looking forward to an opportunity for working in a dynamic, challenging  
+                Environment, where I can utilize my skills for developing my career and 
+                For the growth of the organization.
+           </p>
+            <div class="container">
+                
+                
+                    <div class="edu">
+                        <h2>Education</h2>
+                        <ul>
+                            <li><span>Post Graduation(2017-2019)</span><br>M.Sc. in Electronics </li>
+                            <br>
+                            <br>
+                            <li><span>Graduation</span><br>BSc</li>
+                        </ul>
+                        <a href="#" class="read">More</a>
+                    </div>
+                    <div class="skill">
+
+                        <h2>Skills</h2>
+                        <ul>
+                            <li><span>Web development</span></li>
+                            <br>
+                            <li><span>Python</span></li>
+                            <br>
+                            <li><span>SQL</span></li>
+                        </ul>
+
+                        <a href="#" class="read">More</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+   
+    
+
+<!-----Contact------>
+
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact<span>Me</span></h1>
+                <p><i class='bx bxs-envelope' style='color:#00eeff' ></i>ankitavadgave@gmail.com</p>
+                <p><i class='bx bxs-phone' style='color:#00eeff' ></i>000000</p>
+                <div class="social-icons">
+                    <a href="#" ><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-behance'></i></a>
+                </div>
+                <a href="#" class="btn2">Download CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Type Your Message Here"></textarea>
+                    <button class="btn2"   type="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+</body>
+
+</html>
